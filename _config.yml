@@ -1,0 +1,35 @@
+title: jekyll-space
+email: sonlink.dourden@gmail.com
+description: > # Theme for Jekyll.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://son-link.github.io/jekyll-theme-space" # the base hostname & protocol for your site
+twitter_username: sonlink
+github_username:  son-link
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+    input: GFM
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# Pagination
+paginate: 8
+paginate_path: "page:num/"
+
+google-analytics: UA-75229203-1
+
+disqus: blogdesonlink
+
+# Social Network
+social_links: true # If true show social links
+rss: true
+facebook: 'https://www.facebook.com/Son-Link-Blog-159172270839305/?ref=your_pages'
+twitter: 'https://twitter.com/sonlink'
+github: 'https://github.com/son-link'
+
+related_posts: true
