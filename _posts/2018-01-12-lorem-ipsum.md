@@ -4,7 +4,7 @@ title:  "Lurem Impum"
 date:   2018-01-12 12:05
 tags:
   - jekyll
-category: Jekyll
+category: jekyll
 img_dest: jekyll-1.png
 description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 ---
