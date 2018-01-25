@@ -8,7 +8,7 @@
 	searchInput: document.getElementById('search-input'),
 	resultsContainer: document.getElementById('results-container'),
 	searchResultTemplate: '<li><a href="{url}">{title}</a><br />{description}</li>',
-	json: '/search.json'
+	json: '{{ '/search.json' | prepend: site.baseurl | prepend: site.url }}'
 });
 </script>
 <script src="{{ '/assets/js/main.js' | prepend: site.baseurl | prepend: site.url }}"></script>
