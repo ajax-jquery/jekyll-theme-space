@@ -183,6 +183,8 @@ a:hover {color: #7FDBFF !important;}
 .proyect img {margin: 0}
 #share a {font-size: 1.2em}
 
+#entry li {margin-bottom: 5px}
+
 /* pre code */
 
 pre {
@@ -327,7 +329,7 @@ pre {
 /* Responsive for various elements */
 
 img {
-	width: 100%;
+	max-width: 100%;
   height: auto;
 }
 

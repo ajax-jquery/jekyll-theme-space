@@ -34,6 +34,5 @@ window.addEventListener('load', function(){
 
   hash = location.hash;
   radio_acor = document.querySelector(hash+'-acor');
-  console.log(radio_acor);
   if (radio_acor) radio_acor.checked = true;
 });
