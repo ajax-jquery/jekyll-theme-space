@@ -1,8 +1,8 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-space"
-  spec.version       = "1.0.0"
+  spec.name          = "jekyll-theme-space"
+  spec.version       = "1.0.1"
   spec.authors       = ["Alfonso Saavedra \"Son Link\""]
   spec.email         = ["sonlink.dourden@gmail.com"]
 
