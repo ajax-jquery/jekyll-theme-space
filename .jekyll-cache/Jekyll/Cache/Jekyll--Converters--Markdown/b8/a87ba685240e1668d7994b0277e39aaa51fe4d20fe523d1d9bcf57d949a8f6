@@ -1,0 +1,188 @@
+I"�<<p>Jekyll-theme-space is my new Jekyll theme for my <a href="https://son-link.github.io">blog (in spanish)</a></p>
+
+<p>This theme is lighwight and responsive, this last include tables, images, videos and iframe videos, like <strong>Youtube</strong> and <strong>Vimeo</strong></p>
+
+<p>Include support for jekyll-seo-tag, Google Analytics and Disqus for comments, and include links on any post for share on various social networks, WhatsApp and Telegram. And support too categories and tags.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>Add this lines to your Jekyll site’s <code class="highlighter-rouge">Gemfile</code>:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">gem</span> <span class="s2">"jekyll-theme-space"</span>
+<span class="n">gem</span> <span class="s2">"jekyll-paginator"</span> <span class="c1"># This line isn't necessary if you use github-pages</span>
+<span class="n">gem</span> <span class="s2">"jekyll-seo-tag"</span> <span class="c1"># If you can use this plugin</span>
+</code></pre></div></div>
+
+<p>Add this lines to your Jekyll site’s <code class="highlighter-rouge">_config.yml</code>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">theme</span><span class="pi">:</span> <span class="s">jekyll-simple-dark</span>
+<span class="na">plugins</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="s">jekyll-paginate</span>
+<span class="pi">-</span> <span class="s">jekyll-seo-tag</span> <span class="c1">#if you use this.</span>
+<span class="na">paginate</span><span class="pi">:</span> <span class="m">5</span> <span class="c1"># Posts per page</span>
+<span class="na">paginate_path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">page:num/"</span>
+</code></pre></div></div>
+
+<p>Rename <strong>index.md</strong> to <strong>index.html</strong> and change <strong>layout</strong> to <em>home</em></p>
+
+<p>For search create a new file on the site root foolder called <strong>search.json</strong> with this content:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">---</span><span class="w">
+</span><span class="err">---</span><span class="w">
+</span><span class="p">[</span><span class="w">
+  
+    </span><span class="p">{</span><span class="w">
+
+      </span><span class="nl">"title"</span><span class="w">    </span><span class="p">:</span><span class="w"> </span><span class="s2">"Font icons"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"url"</span><span class="w">      </span><span class="p">:</span><span class="w"> </span><span class="s2">"//jekyll/2018/01/24/font-icons.html"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"category"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"jekyll"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="w">     </span><span class="p">:</span><span class="w"> </span><span class="s2">"jekyll, icons"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"date"</span><span class="w">     </span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-01-24 00:00:00 +0100"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"description"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"A list with all available icons for the theme."</span><span class="w">
+
+    </span><span class="p">}</span><span class="w"> </span><span class="p">,</span><span class="w">
+  
+    </span><span class="p">{</span><span class="w">
+
+      </span><span class="nl">"title"</span><span class="w">    </span><span class="p">:</span><span class="w"> </span><span class="s2">"Lurem Impum"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"url"</span><span class="w">      </span><span class="p">:</span><span class="w"> </span><span class="s2">"//jekyll/2018/01/12/lorem-ipsum.html"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"category"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"jekyll"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="w">     </span><span class="p">:</span><span class="w"> </span><span class="s2">"jekyll"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"date"</span><span class="w">     </span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-01-12 12:05:00 +0100"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"description"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."</span><span class="w">
+
+    </span><span class="p">}</span><span class="w"> </span><span class="p">,</span><span class="w">
+  
+    </span><span class="p">{</span><span class="w">
+
+      </span><span class="nl">"title"</span><span class="w">    </span><span class="p">:</span><span class="w"> </span><span class="s2">"Responsive videos"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"url"</span><span class="w">      </span><span class="p">:</span><span class="w"> </span><span class="s2">"//blog/2018/01/12/responsive-videos.html"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"category"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"blog"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="w">     </span><span class="p">:</span><span class="w"> </span><span class="s2">"blog, videos, jekyll, responsive"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"date"</span><span class="w">     </span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-01-12 11:05:00 +0100"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"description"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Example of responsive iframe video."</span><span class="w">
+
+    </span><span class="p">}</span><span class="w"> </span><span class="p">,</span><span class="w">
+  
+    </span><span class="p">{</span><span class="w">
+
+      </span><span class="nl">"title"</span><span class="w">    </span><span class="p">:</span><span class="w"> </span><span class="s2">"Responsive tables"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"url"</span><span class="w">      </span><span class="p">:</span><span class="w"> </span><span class="s2">"//blog/2018/01/12/responsive-tables.html"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"category"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"blog"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="w">     </span><span class="p">:</span><span class="w"> </span><span class="s2">"blog, tables, jekyll, responsive"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"date"</span><span class="w">     </span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-01-12 11:04:00 +0100"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"description"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Example of responsive table"</span><span class="w">
+
+    </span><span class="p">}</span><span class="w"> </span><span class="p">,</span><span class="w">
+  
+    </span><span class="p">{</span><span class="w">
+
+      </span><span class="nl">"title"</span><span class="w">    </span><span class="p">:</span><span class="w"> </span><span class="s2">"Example responsive images on theme"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"url"</span><span class="w">      </span><span class="p">:</span><span class="w"> </span><span class="s2">"//blog/2018/01/12/responsive-images.html"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"category"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"blog"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="w">     </span><span class="p">:</span><span class="w"> </span><span class="s2">"blog, jekyll"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"date"</span><span class="w">     </span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-01-12 11:03:00 +0100"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"description"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Example of responsive images."</span><span class="w">
+
+    </span><span class="p">}</span><span class="w"> 
+  
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+<p><strong>Note</strong>: You can change post.description to post.content, but innsert description is much better, use post.content only create a big file and also inaccurate search result.</p>
+
+<p>And then execute:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bundle
+</code></pre></div></div>
+
+<p>Or install it yourself as:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gem install jekyll-theme-space
+</code></pre></div></div>
+
+<h2 id="usage">Usage</h2>
+
+<h3 id="social-links">Social links:</h3>
+
+<p>For activate social links add these lines on your _config.yml:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">social_links</span><span class="pi">:</span> <span class="no">true</span>  <span class="c1"># If true show social links</span>
+<span class="na">rss</span><span class="pi">:</span> <span class="no">true</span> <span class="c1"># For add icon to link feed.xml</span>
+<span class="na">facebook</span><span class="pi">:</span>
+<span class="na">github</span><span class="pi">:</span>
+<span class="na">gplus</span><span class="pi">:</span>
+<span class="na">instagram</span><span class="pi">:</span>
+<span class="na">linkedin</span><span class="pi">:</span>
+<span class="na">pinterest</span><span class="pi">:</span>
+<span class="na">twitter</span><span class="pi">:</span>
+<span class="na">vimeo</span><span class="pi">:</span>
+<span class="na">youtube</span><span class="pi">:</span>
+</code></pre></div></div>
+<p>Just add the ones you’re going to use.</p>
+
+<p><strong>Note:</strong> gplus is for Google+ link.</p>
+
+<h3 id="responsive-iframe-for-youtube-or-vimeo-videos">Responsive iframe for Youtube or Vimeo videos:</h3>
+
+<p>Insert the iframe code into a div whit the class <strong>video</strong> and remove <strong>width</strong> and <strong>height</strong> attributes, like this:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"video"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;iframe</span>  <span class="na">src=</span><span class="s">"https://www.youtube.com/embed/&lt;videoID&gt;"</span> <span class="na">frameborder=</span><span class="s">"0"</span> <span class="na">allow=</span><span class="s">"autoplay; encrypted-media"</span> <span class="na">allowfullscreen</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h3 id="google-analytics">Google Analytics:</h3>
+<p>For use Google Analytics include this line  on <strong>_config.yml</strong> and replace &lt;code&gt; for your Google Analytics code:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">google-analytics</span><span class="pi">:</span> <span class="s">&lt;code&gt;</span>
+</code></pre></div></div>
+<p>Where &lt;code&gt; is your Google Analytics code.</p>
+
+<h3 id="jekyll-seo-tag">jekyll-seo-tag:</h3>
+<p>For use you only need add this plugin on the plugins array on <strong>_config.yml</strong></p>
+
+<h3 id="categories-and-tags-pages">categories and tags pages:</h3>
+<p>Simple create a new file on the root and set categories as layout. Same for tags.
+For add simple add these variables on YAML head of post. For example:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">category</span><span class="pi">:</span> <span class="s">Jekyll</span>
+<span class="na">tags</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="s">jekyll</span>
+<span class="pi">-</span> <span class="s">tutorial</span>
+</code></pre></div></div>
+
+<h3 id="exclude-pages-on-menu">Exclude pages on menu:</h3>
+<p>If you do not want a page to appear in the menu, simply add this is the YAML header on the desired pages:</p>
+
+<h3 id="related-posts">Related posts:</h3>
+<p>include this in <strong>_config.yml</strong></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">related_post</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div></div>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">onmenu</span><span class="pi">:</span> <span class="no">false</span>
+</code></pre></div></div>
+
+<h3 id="custom-404-page-error">Custom 404 page error:</h3>
+<p>For add custom 404 page create a new page in your site root folder called <strong>404.md</strong> or <strong>404.html</strong> start width this yaml head:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="m">404</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">/404.html</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<h2 id="other-credits">Other credits:</h2>
+<ul>
+  <li><a href="http://necolas.github.io/normalize.css/">normalize.css</a> use for reset default styles on browsers.</li>
+  <li><a href="http://fontello.com/">Fontello</a> for make the icon font.</li>
+  <li><a href="https://github.com/christian-fei/Simple-Jekyll-Search">Simple-Jekyll-Search</a> for search. Thans to <a href="https://blog.webjeda.com/instant-jekyll-search/">Webjeda</a> for the tutorial.</li>
+  <li><a href="https://fonts.google.com/specimen/Exo">Exo</a> as the default font.</li>
+  <li>Monokai for highlight thakns to <a href="https://github.com/richleland/pygments-css">https://github.com/richleland/pygments-css</a></li>
+  <li>Background image is <a href="https://pxhere.com/es/photo/114960">donwload from here</a></li>
+</ul>
+
+<h2 id="license">License</h2>
+
+<p>The theme is available as open source under the terms of the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+:ET

@@ -24,7 +24,7 @@
     {% if sameTagCount >= minCommonTags %}
       <a href="{{ site.baseurl }}{{ post.url }}" class="related_post">
         <figure>
-          <img src="{{site.url}}/img/img_dest/{{ post.img_dest }}" />
+          <img src="{{absolute_url}}/img/img_dest/{{ post.img_dest }}" />
           <legend>{{ post.title }}</legend>
         </figure>
       </a>

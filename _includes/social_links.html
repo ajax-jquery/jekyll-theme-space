@@ -1,6 +1,6 @@
 {% if.site.rss%}
   <li>
-    <a href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" class="icon-rss" title="RSS"></a>
+    <a href="{{ '/feed.xml' | absolute_url }}" class="icon-rss" title="RSS"></a>
   </li>
 {% endif %}
 {% if site.facebook %}

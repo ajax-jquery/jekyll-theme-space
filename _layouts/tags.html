@@ -13,7 +13,7 @@ layout: default
       <div class="category_list">
         {% for post in site.tags[tag_name] %}
         <article class="archive-item">
-          <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+          <h4><a href="{{ absolute_url }}{{ post.url }}">{{post.title}}</a></h4>
         </article>
         {% endfor %}
       </div>
